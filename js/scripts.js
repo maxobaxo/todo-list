@@ -6,7 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = $("input#new-item").val();
-    $(".to-do-list").append("<li>" + userInput + "</li>");
+    $(".to-do-list").append("<input type='checkbox'>" + userInput + "<br>");
     $(".results").show();
   });
 });
