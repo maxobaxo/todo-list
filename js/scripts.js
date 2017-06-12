@@ -6,7 +6,20 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = $("input#new-item").val();
-    $(".to-do-list").append("<input type='checkbox'>" + userInput + "<br>");
+    $(".to-do-list").append("<li class='task'>" + userInput + "</li>");
+    
+    $(".task").click(function(event) {
+      event.preventDefault();
+
+      $(this).addClass("done");
+    });
+
     $(".results").show();
+  });
+
+  $("#checkables").submit(function(event) {
+    event.preventDefault();
+
+    $(".done").hide();
   });
 });
