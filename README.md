@@ -14,11 +14,17 @@ By Rena Rallis and Max Scher
   * $ open index.html
 
 ## Specifications ##
-* 
-  Input: New item
-
-  Output:
-
+* It can add a new item to the to-do list based on user input.
+  * Input1: Laundry
+  * Output1: [Laundry]
+  * Input2: dishes
+  * Output2: [Laundry, dishes]
+* It can allow user to indicate task is done.
+  * Input: Laundry
+  * Output: Laundry [x]
+* It can remove completed tasks from the to-do list when marked done.
+  * Input: Laundry [x]
+  * Output:
 
 
 ## Languages Used ##
